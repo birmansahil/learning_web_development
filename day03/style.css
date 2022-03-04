@@ -1,0 +1,44 @@
+/*Learning about selectors*/
+
+/*Type Selectors*/
+img {
+  width: 200px;
+  /* height: 200px; */
+  /* object-fit: cover; */
+}
+
+table,
+th,
+td {
+  border: 2px solid #000000;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+span {
+  padding: 5px;
+  font-family: sans-serif;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+/*ID and Class Selectors*/
+#imp {
+  background-color: #f1b74b;
+  color: #ffffff;
+}
+
+.term {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*Attribute Selectors*/
+img[alt] {
+  border: 2px dashed #f1b74b;
+}
+
+/*Pseudo Selectors*/
+#dummy-list li:nth-child(2n + 1) {
+  color: #dd46d1;
+}

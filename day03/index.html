@@ -4,29 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
-
-    <style>
-      img {
-        width: 200px;
-        /* height: 200px; */
-        /* object-fit: cover; */
-      }
-
-      table,
-      th,
-      td {
-        border: 2px solid #000000;
-        border-collapse: collapse;
-        padding: 5px;
-      }
-
-      span {
-        padding: 5px;
-        font-family: sans-serif;
-        background-color: #ff0000;
-        color: #ffffff;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <img
@@ -37,7 +15,7 @@
     <!--Lists: Ordered, Unordered and Description-->
     <ol>
       How to apply:
-      <li>Get your documents ready</li>
+      <li id="imp">Get your documents ready</li>
       <li>Go to website</li>
       <li>Hit submit</li>
     </ol>
@@ -49,13 +27,13 @@
     </ul>
 
     <dl>
-      <dt>HTML</dt>
+      <dt class="term">HTML</dt>
       <dd>HyperText Markup Language</dd>
 
-      <dt>CSS</dt>
+      <dt class="term">CSS</dt>
       <dd>Cascading Style Sheets</dd>
 
-      <dt>JS</dt>
+      <dt class="term">JS</dt>
       <dd>JavaScript</dd>
     </dl>
 
@@ -91,5 +69,14 @@
         </tr>
       </tfoot>
     </table>
+
+    <h2>Dummy List</h2>
+    <ol id="dummy-list">
+      <li>Item 01</li>
+      <li>Item 02</li>
+      <li>Item 03</li>
+      <li>Item 04</li>
+      <li>Item 05</li>
+    </ol>
   </body>
 </html>
