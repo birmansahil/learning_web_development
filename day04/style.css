@@ -1,0 +1,28 @@
+/*Learning box model: Content, Padding, Border and Margin*/
+/*Padding is the space outside of content between borders and Margin is used to put space between two different elements*/
+p {
+  padding: 10px 20px;
+  border: 5px solid tomato;
+}
+
+.div-box {
+  padding: 20px;
+  border: 10px solid lightgreen;
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.span-box {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+.inline-block {
+  display: inline-block;
+}
