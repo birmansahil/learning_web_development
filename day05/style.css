@@ -1,0 +1,36 @@
+.box-container {
+  border: 3px solid grey;
+  position: relative;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.gold {
+  background-color: gold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.royalblue {
+  background-color: royalblue;
+}
+
+.tweet {
+  border: 2px solid peru;
+}
+
+/* When we use float property we are saying that put this element left/right relative to the container and let the rest of the elements float around it */
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: aqua;
+  float: left;
+}
