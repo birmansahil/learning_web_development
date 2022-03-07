@@ -1,0 +1,19 @@
+.container {
+  border: 5px solid gray;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box {
+  flex-grow: 1;
+  width: 5rem;
+  height: 5rem;
+  margin: 10px;
+  background-color: gold;
+}
+
+/*Aligning and sizing individual items*/
+.box-one {
+  align-self: flex-end;
+  flex-grow: 2;
+}
