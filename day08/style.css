@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /*Font stack: so if one font is not availabe on a machine the next one will be used*/
+
+  /* font-display: optional; */
+  /* We use font display to tell browser what to do if the custom font is taking long to download. The font-display property can help us create better UX by overcoming Flash of Unstyle or Invisible Text issues. */
+}
+
+h1 {
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif; /* Google Font */
+  /* We can over-ride the inherited font style if we want */
+}
+
+p {
+  font-size: 1rem;
+  /* font-weight: bold; */
+  /* font-weight: 700; */
+  font-style: italic;
+  color: #222;
+}
