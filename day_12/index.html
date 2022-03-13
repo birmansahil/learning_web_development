@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Additional Input Fields</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Form part 01</legend>
+
+        <div class="input-type">
+          <p>What would you like to learn?</p>
+
+          <div class="form-control">
+            <input type="checkbox" id="frontend" />
+            <label for="frontend">Front-end</label>
+          </div>
+
+          <div class="form-control">
+            <input type="checkbox" id="backend" />
+            <label for="backend">Backend</label>
+          </div>
+        </div>
+
+        <div class="input-type">
+          <p>Your life is a joke</p>
+
+          <div class="form-control">
+            <input type="radio" name="life" id="true" />
+            <label for="true">True</label>
+          </div>
+
+          <div class="form-control">
+            <input type="radio" name="life" id="false" />
+            <label for="false">False</label>
+          </div>
+        </div>
+
+        <div class="input-type">
+          <p>On a scale of 1 - 10, how much do you love coding?</p>
+
+          <div class="form-control">
+            <input type="range" id="slider" min="1" max="10" value="8" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Form part 02</legend>
+
+        <div class="input-type">
+          <p>Please submit a screenshot</p>
+
+          <div class="form-control">
+            <input type="file" id="screenshot" accept=".png" />
+            <!-- <input type="file" id="screenshot" accept=".jpg, .png" multiple /> -->
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

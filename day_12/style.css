@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  padding: 2rem;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.input-type {
+  margin: 1.75rem 0;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
+}
