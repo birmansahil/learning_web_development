@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1.5;
+  color: white;
+}
+
+div {
+  margin-top: 50px;
+  width: 400px;
+  padding: 15px;
+}
+
+div:nth-child(1) {
+  background-color: rgba(255, 99, 71, 0.95);
+}
+
+div:nth-child(2) {
+  background-color: rgba(30, 144, 255, 0.85);
+}
+
+div:nth-child(3) {
+  background-color: rgba(72, 61, 139, 0.65);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
