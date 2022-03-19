@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  min-width: 250px;
+  line-height: 1.75;
+  color: #222;
+  background-color: #e7b91d;
+}
+
+.container {
+  width: 95%;
+  max-width: 800px;
+  margin: 5rem auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 7.5rem;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  font-size: 1.45rem;
+  columns: 2;
+  column-gap: 2.5rem;
+}
