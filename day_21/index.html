@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check your INF results</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Get your INF results</h1>
+      <p class="sub-title">
+        Your results available online are not official. They are provisional
+        only until you receive your official Test Report Form (TRF).
+      </p>
+    </header>
+
+    <main>
+      <h2>Fill in your details to check your results</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="fname">Given / other name(s)</label>
+          <span
+            >You must enter your given name / other name(s) as provided in your
+            test application.</span
+          >
+          <input type="text" name="fname" id="fname" placeholder="Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="lname">Family name</label>
+          <span
+            >If you do not have a family name, please enter a hyphen (-).</span
+          >
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Family name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pnumber">Passport number or ID number</label>
+          <input
+            type="number"
+            name="pnumber"
+            id="pnumber"
+            min="0"
+            max="999999"
+            placeholder="Passport Number"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of birth</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+
+        <button type="submit">Get Results</button>
+      </form>
+    </main>
+  </body>
+</html>

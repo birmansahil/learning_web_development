@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 200px;
+  color: #222;
+  line-height: 1.65;
+  font-family: sans-serif;
+  background-color: aliceblue;
+}
+
+header,
+main {
+  width: 95%;
+  max-width: 1920px;
+  margin: 5rem auto;
+}
+
+header {
+  padding: 3rem 3.5rem;
+  color: #fff;
+  background-color: #2f3a40;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.75rem;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.form-group {
+  margin: 2.25rem 0;
+}
+
+label,
+span {
+  display: block;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+label::after {
+  content: "*";
+  color: #e21837;
+}
+
+span {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-weight: 500;
+  outline: 0;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.5rem;
+}
+
+button {
+  padding: 1.5rem 1.75rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: #e21837;
+}
+
+@media screen and (min-width: 800px) {
+  form {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    width: 48%;
+  }
+}
