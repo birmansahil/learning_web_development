@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  color: #222;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 95%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.title,
+.sub-title {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.75rem;
+}
+
+.sub-title,
+.email {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 675px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-text {
+    width: 40%;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+}
