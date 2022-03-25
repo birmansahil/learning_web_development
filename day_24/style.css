@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #222;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: #a3ccdf;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.close {
+  text-align: right;
+}
+
+a {
+  color: #222;
+  font-size: 1.5rem;
+}
