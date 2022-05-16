@@ -3,16 +3,22 @@ let welcomeEl = document.getElementById("welcome-el");
 let user = "Mandy";
 let greeting = "Welcome back";
 
-welcomeEl.innerText = greeting + " " + user + " " + "👋";
+welcomeEl.textContent = greeting + " " + user + " " + "👋";
 
 let countEl = document.getElementById("count-el");
 let count = 0;
 
 function increment() {
     count += 1;
-    countEl.innerText = count;
+    countEl.textContent = count;
 }
 
+let saveEl = document.getElementById("save-el");
+
 function save() {
-    console.log("You clicked the save btn");
+    let countStr = count + " - ";
+    saveEl.textContent += countStr;
+    // Setting count back to zero after saving the count
+    count = 0;
+    countEl.textContent = count;
 }
