@@ -40,3 +40,36 @@ console.log(6 + "5") // 65
 console.log("My points: " + 5 + 9) // My points: 59
 console.log(2 + 2) // 4
 console.log("11" + "14") // 1114
+
+// Display error message
+
+let errorEl = document.getElementById("error-el");
+
+function purchase() {
+    errorEl.textContent = "Something went wrong, please try again";
+}
+
+// Mathematics operations
+
+let num1 = 8;
+let num2 = 2;
+let result = document.getElementById("result-el");
+
+document.getElementById("num1-el").textContent = num1;
+document.getElementById("num2-el").textContent = num2;
+
+function add() {
+    result.textContent = "Result: "+ (num1 + num2);
+}
+
+function subtract() {
+    result.textContent = "Result: "+ (num1 - num2);
+}
+
+function multiply() {
+    result.textContent = "Result: "+ (num1 * num2);
+}
+
+function divide() {
+    result.textContent = "Result: "+ (num1 / num2);
+}
