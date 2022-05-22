@@ -4,18 +4,23 @@ let secondCard = 11;
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
+let message = "";
 
 console.log(sum);
 
 if (sum < 21) {
-    console.log("Do you want to draw a new card?");
+    message = "Do you want to draw a new card?";
 } else if (sum === 21) {
-    console.log("Wohoo! You've got Blackjack!");
+    message = "Wohoo! You've got Blackjack!";
     hasBlackJack = true;
 } else {
-    console.log("You're out of the game");
+    message = "You're out of the game";
     isAlive = false;
 }
+
+// Log out message
+
+console.log(message);
 
 // Cash Out
 
@@ -41,3 +46,13 @@ if (age < 100) {
 } else {
     console.log("Not elegible, you have already gotten one");
 }
+
+// Practice boolean conditional statements
+
+console.log(4 === 3)  // false
+console.log(5 > 2)    // true
+console.log(12 > 12)  // false
+console.log(3 < 0)    // false
+console.log(3 >= 3)   // true
+console.log(11 <= 11) // true
+console.log(3 <= 2)   // false
