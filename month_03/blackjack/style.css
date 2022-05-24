@@ -25,3 +25,16 @@ h1 {
 #message-el {
     font-style: italic;
 }
+
+button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: #016f32;
+    font-size: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: goldenrod;
+}
