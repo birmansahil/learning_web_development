@@ -34,3 +34,16 @@ function newCard() {
     sum += card;
     renderGame();
 }
+
+// Array is an ordered list of items 
+let courses = ["HTML", "CSS", "JS", "NodeJS", "ReactJS"];
+
+console.log(courses);
+
+// Array's are zero indexed - meaning their item count starts from zero
+console.log(courses[1]);
+console.log(courses[2]);
+console.log(courses[0]);
+
+// Array are composite or complex data type they can contain different data types (primitive data types i.e. string, bollean, number) within them 
+let bio = ["Mandy", 33, true];
