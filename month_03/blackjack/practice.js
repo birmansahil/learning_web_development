@@ -80,3 +80,28 @@ let numbers = [7, 3, 9];
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
 }
+
+// Racing Game, returning from a function
+
+let player1Time = 102;
+let player2Time = 105;
+
+function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time;
+    } else if (player1Time > player2Time) {
+        return player2Time;
+    } else {
+        return player1Time;
+    }
+}
+
+let fastestRaceTime = getFastestRaceTime();
+console.log(fastestRaceTime);
+
+function getTotalRaceTime () {
+    return player1Time + player2Time;
+}
+
+let totalRaceTime = getTotalRaceTime();
+console.log(totalRaceTime);
