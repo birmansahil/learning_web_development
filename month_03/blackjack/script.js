@@ -1,19 +1,30 @@
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
+let cards = [];
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let cardsEl = document.getElementById("cards-el");
 let sumEl = document.getElementById("sum-el");
 
 function getRandomCard() {
-    return 5;
+    let randomNumber = Math.floor(Math.random() * 13) + 1;
+
+    if (randomNumber === 1) {
+        return 11;
+    } else if (randomNumber > 10) {
+        return 10;
+    } else {
+        return randomNumber;
+    }
 }
 
 function startGame() {
+    isAlive = true;
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
     renderGame();
 }
 
@@ -43,19 +54,3 @@ function newCard() {
     cards.push(card);
     renderGame();
 }
-
-// Mathematics
-
-let randomNumber = Math.random(); // Generates a random number between 0 and 1 (0 included but 1 excluded)
-console.log(randomNumber);
-
-randomNumber *= 6; // Number now ranges from 0 - 6 (0 is inluded but 6 in not)
-console.log(randomNumber);
-
-let flooredNumber = Math.floor(3.945); // Converts number to integer by removing the decimals
-console.log(flooredNumber);
-
-// Dice game
-
-let dice = Math.floor(Math.random() * 6);
-console.log(dice);

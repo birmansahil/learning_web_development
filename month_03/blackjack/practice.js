@@ -105,3 +105,22 @@ function getTotalRaceTime () {
 
 let totalRaceTime = getTotalRaceTime();
 console.log(totalRaceTime);
+
+// Mathematics
+
+let randomNumber = Math.random(); // Generates a random number between 0 and 1 (0 included but 1 excluded)
+console.log(randomNumber);
+
+randomNumber *= 6; // Number now ranges from 0 - 6 (0 is inluded but 6 in not)
+console.log(randomNumber);
+
+let flooredNumber = Math.floor(3.945); // Converts number to integer by removing the decimals
+console.log(flooredNumber);
+
+// Dice game
+
+function rollDice() {
+    return (Math.floor(Math.random() * 6) + 1);
+} 
+
+console.log(rollDice());
