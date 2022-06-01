@@ -124,3 +124,62 @@ function rollDice() {
 } 
 
 console.log(rollDice());
+
+// Logical operators 
+
+let hasSolvedChallenge = false;
+let hasHintsLeft = false;
+
+function showSolution() {
+    console.log("Showing Solution.....");
+}
+
+if (!hasSolvedChallenge && !hasHintsLeft) {
+    showSolution();
+}
+
+let hasCompletedCourse = true;
+let givesCertificate = true;
+
+function generateCertificate() {
+    console.log("Generating Certificate.....");
+}
+
+if (hasCompletedCourse && givesCertificate) {
+    generateCertificate();
+}
+
+let likesDocumentaries = false;
+let likesStartups = true;
+
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you will like!");
+}
+
+if (likesDocumentaries || likesStartups) {
+    recommendMovie();
+}
+
+// Objects in JS are key-value pairs
+// You can think of objects as an ability provided by JS to store data in depth
+// Objects are composite / complex data types as they can store multiple type of data in them (i.e. numbers, strings, bolleans, etc.)
+// Functions inside an object are called Methods
+
+let course = {
+    title: "Learn JavaScript",
+    author: "Mandy",
+    length: 63,
+    tags: ["html", "css"],
+    isFree: false
+}
+
+let listing = {
+    title: "Live like a king",
+    price: 190,
+    isAvailable: true,
+    isFavourite: false,
+    reviews: ["first review", "second review", "n-th review"]
+}
+
+console.log(listing.title);
+console.log(listing.isAvailable);
